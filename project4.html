@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Analysing Tweets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.pdf-container {
+				max-width: 80%; 
+				margin: 0 auto; 
+				text-align: center; 
+			}
+			#ProjectTwoPDF {
+				width: 95%;
+				height: 100vh;
+				display: block; 
+				margin: 0 auto;
+				border: 10px double #AC5586;
+				border-radius: 20px; 
+				box-shadow: 10px 0px 10px rgba(148, 22, 81, 0.2);
+			}
+
+			.boxed-heading {
+            border: 2px solid #AC5586;
+            padding: 10px;              
+            display: inline-block;      
+            border-radius: 5px; 
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"></span><span class="title" style="color: #AC5586;">Personal Project 1</span>
+								</a>
+
+							<!-- Nav -->
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1 style="color: #AC5586;">Loan Approval Prediction</h1>
+							<span class="image main"><img src="images\loan.jpg" alt="" style="width: 40%; height: auto;" /></span>
+							<p>This project involves building a predictive model to determine the likelihood of loan application approvals based on applicant data. By employing machine learning techniques, the project aims to streamline the loan approval process, enhance decision-making accuracy, and reduce processing times for financial institutions.</p>
+                            <p>The goal is to predict loan application outcomes (approved or not) based on key factors such as applicant demographics, financial data, credit history, and loan-specific attributes.</p>
+                            <b>Technologies Used:</b>
+							<li>Programming Language: Python
+                            <li>Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+                            <li>Tools: Jupyter Notebook</li>
+                            <p></p>
+							<b>Results:</b>
+                            <p>Best Model: Gaussian Naive Bayes (GNB)</p>
+                            <li>Accuracy: 82.93%</li>
+                            <li>Minimal False Negatives (FN = 2), ensuring eligible borrowers are not overlooked.</li>
+                            <p>Alternative Model: K-Neighbors Classifier</p>
+                            <li>Accuracy: 78.86%</li>
+                            <li>Balanced performance between false positives and false negatives.</li>
+
+
+
+							<hr style="border: 1px solid #AC5586; border-radius: 5px; margin: 40px 100;">
+
+							<div id="main">
+								<div class="inner">
+									<h2 class="boxed-heading" style="color: #AC5586;">Process / Approach</h2>
+									<ol>
+                            <div>
+                                <div>
+                                    <b>Data Preprocessing:</b>
+                                    <ul>
+                                        <li>Handled missing values for critical features (e.g., credit history and income).</li>
+                                        <li>Performed feature scaling using StandardScaler for numerical features.</li>
+                                        <li>Encoded categorical variables (e.g., gender, education) using LabelEncoder</li>
+                                    </ul>
+                            
+                                    <b>Exploratory Data Analysis:</b>
+                                    <ul>
+                                        <li>Analysed trends in loan approval rates based on variables like gender, marital status, and credit history.</li>
+                                        <li>Visualised data distributions and relationships using histograms and bar plots.</li>
+                                    </ul>
+                            
+                                    <b>Model Selection:</b>
+                                    <ul>
+                                        <li>Evaluated the following machine learning models:
+                                            <ul>
+                                                <dt>Random Forest</dt>
+                                                <dt>Gaussian Naive Bayes (GNB)</dt>
+                                                <dt>Decision Trees</dt>
+                                                <dt>K-Nearest Neighbors (KNN)</dt>
+                                            </ul>
+                                        </li>
+                                        <li>Assessed accuracy, precision, and recall using confusion matrices.</li>
+                                    </ul>
+                            
+                                    <b>Key Priorities</b>
+                                    <ul>
+                                        <li>(Performance Metrics):
+                                            <ul>
+                                                <dt>Minimized false negatives to avoid missing eligible borrowers.</dt>
+                                                <dt>Balanced false positives to reduce financial risks.</dt>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <b>Dataset</b>
+                                        <p>You can download the dataset used for this project by clicking the link below:</p>
+                                        <a href="links\loan.csv" download="LoanDataset.csv" 
+                                        style="display: inline-block; padding: 12px 20px; background-color: #ca7aa7; color: white; font-weight: bold; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s;">
+                                        Download Dataset (loan.csv)
+                                     </a>
+                                     
+                                     <script>
+                                       // Add hover effects for the button
+                                       const button = document.querySelector('a[download]');
+                                       button.addEventListener('mouseover', () => {
+                                         button.style.transform = 'scale(1.05)';
+                                         button.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.2)';
+                                       });
+                                       button.addEventListener('mouseout', () => {
+                                         button.style.transform = 'scale(1)';
+                                         button.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                                       });
+                                     </script>
+                                                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                        <body>
+						<iframe  id="ProjectTwoPDF" src="pdfs\Loan_approvalproject.pdf" frameborder="0"></iframe>
+					</body>
+					</div>
+					<div>
+						<p></p>
+						<p></p>
+					</div>
+				<!-- Footer -->
+            </section>
+            <section>
+                <div style="text-align: center; color: #333333;">
+                    <h2>Contact Me!</h2>
+                    <p>Email: <a href="mailto:srividyabobba28@gmail.com" style="text-decoration: none;">srividyabobba28@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+61415087053" style="text-decoration: none;">0415 087 053</a></p>
+                    <p>Location: Melbourne, VIC</p>
+        
+                    <div style="text-align: center; margin-top: 10px;">
+                        <ul class="icons" style="list-style: none; padding: 0; display: inline-flex; gap: 15px;">
+                            <li><a href="https://www.linkedin.com/in/srividya-bobba-5676182b8/?originalSubdomain=au" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/sbob28/Portfolio.git" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <ul class="copyright">
+                &copy; Untitled. All rights reserved</li>
+            </ul>
+        </div>
+        </footer>
+        
+        </div>
+        
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        </body>
+        </html>

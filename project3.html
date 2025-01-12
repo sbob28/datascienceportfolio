@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Analysing Tweets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.pdf-container {
+				max-width: 80%; 
+				margin: 0 auto; 
+				text-align: center; 
+			}
+			#ProjectOnePDF {
+				width: 95%;
+				height: 100vh;
+				display: block; 
+				margin: 0 auto;
+				border: 10px double #66C3B1;
+				border-radius: 20px; 
+				box-shadow: 10px 0px 10px rgba(40, 186, 94, 0.2);
+			}
+
+			.boxed-heading {
+            border: 2px solid #66C3B1;
+            padding: 10px;              
+            display: inline-block;      
+            border-radius: 5px; 
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"></span><span class="title" style="color: #66C3B1;" >University Project 3</span>
+								</a>
+
+							<!-- Nav -->
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Projects</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="certifications.html">Certifications</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1 style="color: #66C3B1;">Social Media Sentiment Analysis</h1>
+							<span class="image main"><img src="images\twitter.avif" alt="" style="width: 60%; height: auto;" /></span>
+							<p>This project involved analysing a large, compressed dataset of social media tweets, focusing on user demographics, geographic mentions, and sentiment analysis. By using command-line tools and programming languages like R, the project demonstrates efficient data processing and analysis techniques to extract insights from a massive dataset without requiring full decompression. Key tasks included determining the dataset’s structure and storage requirements, extracting unique user counts, identifying temporal data ranges, and conducting sentiment analysis for specific countries (USA and Canada) based on mentions in tweets. The sentiment results were then visualised to provide a clear understanding of public opinions, with potential applications in areas such as market research, trend analysis, and public sentiment studies. This approach showcases practical skills in handling large data files, data extraction, filtering, and visualisation.</p>
+                            <p></p>
+							<b>This was the third assignment for a unit at Monash University</b>
+							<p></p>
+							<b>(Unit: Intro to Data Science)</b>
+							<p></p>
+
+							<hr style="border: 1px solid #66C3B1; border-radius: 5px; margin: 40px 100;">
+
+							<div id="main">
+								<div class="inner">
+									<h2 class="boxed-heading" style="color: #66C3B1;">Questions Explored</h2>
+									<p>The project aimed to address these data processing and sentiment analysis tasks:</p>
+									<ol>
+										<b>A1. Inspecting the Data</b>
+											<ol>
+												<li>What is the size of the FIT1043_Dataset.gz file, and how can it be determined using shell commands?</li>
+												<li>What delimiter is used to separate the columns in the file, and how was this deduced?</li>
+												<li>How many lines are there in the dataset, and how can this be determined with a shell command?</li>
+											</ol>
+										
+										<b>A2. Information from Data</b>
+											<ol>
+												<li>How many unique users are there in the dataset? Provide a shell command using "awk" and "uniq" to find this.</li>
+												<li>What is the date range for the Twitter posts in this file?</li>
+												<li>For each of the following tasks, provide a shell command and a brief explanation:</li>
+													<ul>
+														<li>How many tweets mentioned the word “France” (case-insensitive)?</li>
+														<li>How many tweets mentioned variations of “France” (e.g., FRance, francE)?</li>
+														<li>Output the lines of tweets from the previous question into a file called myText.txt.</li>
+													</ul>
+											</ol>
+										
+										<b>A3. Data Aggregation</b>
+											<ol>
+												<li>Find the total number of negative, neutral, and positive tweets mentioning “USA” (case-insensitive) and do the same for “Canada”.</li>
+												<li>Store the results of A3.1 in sentiment-USA.csv and sentiment-canada.csv files, formatted as CSV.</li>
+												<li>Using R, read the sentiment-USA.csv and sentiment-canada.csv files, and create bar charts to visualise the sentiment for both countries.</li>
+												<li>Discuss the differences between the two bar charts, analysing the sentiment distribution for the USA and Canada.</li>
+											</ol>
+										
+										<b>A4. Small Challenge</b>
+											<ol>
+												<li>Extract timestamps of tweets mentioning “Australia” (case-insensitive) and save them into aus_time.txt using the shell.</li>
+												<li>In R, read aus_time.txt and convert the timestamps to R datetime objects using strptime(). Provide an explanation of the format string used.</li>
+												<li>Using the converted timestamps, calculate the number of tweets per day and create a histogram of daily tweet counts. Discuss the distribution of tweets in your histogram, noting any patterns.</li>
+											</ol>
+									</ol>
+								</div>
+							</div>
+
+					<div>
+					<body>
+						<iframe  id="ProjectOnePDF" src="pdfs\FIT1043 A3.pdf" frameborder="0"></iframe>
+					</body>
+					</div>
+					<div>
+						<p></p>
+						<p></p>
+					</div>
+				<!-- Footer -->
+            </section>
+            <section>
+                <div style="text-align: center; color: #333;">
+                    <h2>Contact Me!</h2>
+                    <p>Email: <a href="mailto:srividyabobba28@gmail.com" style="text-decoration: none;">srividyabobba28@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+61415087053" style="text-decoration: none;">0415 087 053</a></p>
+                    <p>Location: Melbourne, VIC</p>
+        
+                    <div style="text-align: center; margin-top: 10px;">
+                        <ul class="icons" style="list-style: none; padding: 0; display: inline-flex; gap: 15px;">
+                            <li><a href="https://www.linkedin.com/in/srividya-bobba-5676182b8/?originalSubdomain=au" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/sbob28/Portfolio.git" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <ul class="copyright">
+                &copy; Untitled. All rights reserved</li>
+            </ul>
+        </div>
+        </footer>
+        
+        </div>
+        
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        </body>
+        </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>GPA Influences Explorer Extended</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Optional: Set a max width for large screens */
+			.pdf-container {
+				max-width: 80%; 
+				margin: 0 auto; 
+				text-align: center; 
+			}
+			#ProjectOnePDF {
+				width: 95%;
+				height: 100vh;
+				display: block; 
+				margin: 0 auto;
+				border: 10px double #7ec0ee;
+				border-radius: 20px; 
+				box-shadow: 10px 0px 10px rgba(4, 110, 197, 0.2);
+			}
+
+			.boxed-heading {
+            border: 2px solid #7ec0ee;  /* Border color */
+            padding: 10px;              /* Add padding around the text */
+            display: inline-block;      /* Make the box wrap around the text */
+            border-radius: 5px; 
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"></span><span class="title" style="color: #7ec0ee;">Univeristy Project 2</span>
+								</a>
+
+							<!-- Nav -->
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Projects</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="certifications.html">Certifications</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1 style="color: #7ec0ee;">GPA Influences Explorer- Extended</h1>
+							<span class="image main"><img src="images/GPA_image.jpg" alt="" style="width: 80%; height: auto;" /></span>
+							<p>The project begins with thorough data wrangling, where missing values are managed, and outliers in columns such as "Absences" and "StudyTimeWeekly" are handled. The data is then normalised to ensure consistency across machine learning models.</p>
+							<p>Using supervised learning techniques, specifically Support Vector Machines (SVM) and Decision Tree Classifiers, this project predicts student performance based on factors such as study time, parental support, and GPA. A comparison of model accuracies highlights the strengths of each model in recognising both high- and low-performing students.</p>
+                            <p>After training and assessing the models, the SVM classifier is applied to new student data to predict each student’s performance class (e.g., "GradeClass").</p>
+							<p></p>
+							<b>For the comeptition section, my model was in the top 10% of the cohort</b>
+							<p></p>
+							<b>This was the first assignment for a unit at Monash University</b> 
+							<p></p>
+							<b>(Unit: Intro to Data Science)</b>
+
+							<hr style="border: 1px solid #7ec0ee; border-radius: 5px; margin: 40px 100;">
+
+							<div id="main">
+								<div class="inner">
+									<h2 class="boxed-heading" style="color: #7ec0ee;">Questions Explored</h2>
+									<p>The project aimed to address these analytical and machine learning tasks:</p>
+									<ol>
+										<b>A1. Data Wrangling (4 marks)</b>
+											<ol>
+												<li>Read the ‘Student_List_A2.csv’ file and list the column names.</li>
+												<li>Replace numerical grade classifications in the ‘GradeClass’ column with their corresponding letter grades ('A', 'B', 'C', 'D', 'F').</li>
+												<li>Identify missing values in the dataset and replace them with the median of the relevant columns.</li>
+												<li>Identify a data quality problem in the ‘Absences’ column and remove rows exhibiting this issue.</li>
+												<li>Examine the 'GPA' and 'GradeClass' columns for data quality issues, propose solutions, and resolve them.</li>
+											</ol>
+										
+										<b>A2. Supervised Learning</b>
+											<ol>
+												<li>Explain supervised learning, labelled data, and train-test datasets.</li>
+												<li>Separate features and labels from the data, ensuring logical predictors are included.</li>
+												<li>Use `sklearn.model_selection.train_test_split` to split the data for training and testing (80%-20%).</li>
+											</ol>
+										
+										<b>A3. Classification (training)</b>
+											<ol>
+												<li>Describe the need for normalising data and apply appropriate normalisation using `sklearn.preprocessing`.</li>
+												<li>Build a Support Vector Machine (SVM) model:
+													<ul>
+														<li>Explain SVM and its use of kernels.</li>
+														<li>Write the code to train the model.</li>
+													</ul>
+												
+												<li>Repeat model training using another algorithm (e.g., Decision Tree or Random Forest).</li>
+											</ol>
+										
+										<b>A4. Classification (prediction)</b>
+											<ol>
+												<li>Use the test dataset to predict ‘GradeClass’ using the SVM and alternate classifier.</li>
+												<li>Display confusion matrices for both models in a 5x5 format.</li>
+												<li>Compare model performances and justify the better-performing algorithm.</li>
+											</ol>
+										
+										<b>A5. Independent Evaluation (Competition)</b>
+											<ol>
+												<li>Predict ‘GradeClass’ for students in ‘Student_List_A2_Submission.csv’ using the best model.</li>
+												<li>Submit predictions in a CSV file with 162 lines, including a header and predictions for each student.</li>
+											</ol>
+										</li>
+									</ol>
+								</div>
+							</div>
+
+
+					<div>
+					<body>
+						<iframe  id="ProjectOnePDF" src="pdfs\A2_1043 cropped.pdf" frameborder="0"></iframe>
+					</body>
+					</div>
+					<div>
+						<p></p>
+						<p></p>
+					</div>
+				<!-- Footer -->
+            </section>
+            <section>
+                <div style="text-align: center; color: #333;">
+                    <h2>Contact Me!</h2>
+                    <p>Email: <a href="mailto:srividyabobba28@gmail.com" style="text-decoration: none;">srividyabobba28@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+61415087053" style="text-decoration: none;">0415 087 053</a></p>
+                    <p>Location: Melbourne, VIC</p>
+        
+                    <div style="text-align: center; margin-top: 10px;">
+                        <ul class="icons" style="list-style: none; padding: 0; display: inline-flex; gap: 15px;">
+                            <li><a href="https://www.linkedin.com/in/srividya-bobba-5676182b8/?originalSubdomain=au" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/sbob28/Portfolio.git" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <ul class="copyright">
+                &copy; Untitled. All rights reserved</li>
+            </ul>
+        </div>
+        </footer>
+        
+        </div>
+        
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        </body>
+        </html>
