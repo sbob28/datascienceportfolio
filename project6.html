@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Chatbot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.pdf-container {
+				max-width: 80%; 
+				margin: 0 auto; 
+				text-align: center; 
+			}
+			#ProjectTwoPDF {
+				width: 95%;
+				height: 100vh;
+				display: block; 
+				margin: 0 auto;
+				border: 10px double #7A89CA;
+				border-radius: 20px; 
+				box-shadow: 10px 0px 10px rgba(148, 22, 81, 0.2);
+			}
+
+			.boxed-heading {
+            border: 2px solid #7A89CA;
+            padding: 10px;              
+            display: inline-block;      
+            border-radius: 5px; 
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"></span><span class="title" style="color: #7A89CA;">Hackathon Project</span>
+								</a>
+
+							<!-- Nav -->
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1 style="color: #7A89CA;">Cycling Through Sleep</h1>
+							<span class="image main"><img src="images\what-are-the-stages-of-sleep-cycle.png" alt="" style="width: 40%; height: auto;" /></span>
+
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;">Inspiration</h2>
+                            <p>The idea for this project arose from the desire to wake up feeling refreshed and energised for the day ahead. Understanding that REM sleep is integral to overall health, we aimed to create a convenient tool to help users incorporate optimal sleep cycles into their daily routines.</p> 
+
+                            <p></p>
+                            <p></p>
+
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> What It Does</h2>
+                            <p>Cycling Through Sleep calculates the closest REM sleep cycle you can complete based on your desired wake-up time. For example, if it’s 11 PM and you want to wake up at 6 AM, the tool calculates the optimal times to wake up after completing full REM cycles. In this case, it may suggest waking up at 5:30 AM after completing five REM sleep cycles.</p> 
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> Focus on Data Analysis</h2>
+                            <p>
+                                This project leverages <u>time-series data analysis</u> to calculate optimal wake-up times based on 
+                                <u>REM sleep cycles</u>, helping users wake up feeling refreshed and less groggy.
+                              </p>
+                              <ul style="list-style-type: none; padding-left: 0;">
+                                <li>
+                                  <p style="margin-bottom: 10px;">
+                                    Sleep cycles last approximately <u>90 minutes</u>, including REM sleep periods. 
+                                    The tool ensures users wake up at the end of a cycle rather than in the middle, minimizing grogginess.
+                                  </p>
+                                </li>
+                                <li>
+                                  <p style="margin-bottom: 10px;">
+                                    The tool takes two key inputs: <u>current time</u> and <u>desired wake-up time</u>. 
+                                    These inputs form the basis for determining feasible wake-up times that align with complete REM cycles.
+                                  </p>
+                                </li>
+                                <li>
+                                  <p>
+                                    Using the inputs, the tool calculates multiple wake-up options and suggests the one closest to the user's 
+                                    desired time while ensuring alignment with natural sleep patterns.
+                                  </p>
+                                </li>
+                              </ul>
+                            </section>
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> How We Built It</h2>
+                            <p><strong>JavaScript:</strong> We developed the source code in JavaScript to handle sleep cycle calculations.</p> 
+                            <p><strong>Bixby Developer Studio:</strong> This allowed us to integrate the logic into a voice assistant framework, enabling users to interact with the tool through voice commands.</p>
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> Challenges We Ran Into</h2>
+                            <p>Initially, we planned to use Google Assistant but faced compatibility issues because tools like Dialogflow had been deprecated. Transitioning to Bixby required us to learn new tools and frameworks while ensuring accurate communication between the JavaScript logic and the Bixby platform.</p> 
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> Accomplishments</h2>
+                            <li>Successfully collaborating as a team to deliver a functional voice assistant integration.</li> 
+                            <li>Learning the fundamentals of voice assistant development and applying them effectively.</li>
+                            <li>Creating a tool that addresses a real-world problem related to health and wellbeing.</li>
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> What We Learned</h2>
+                            <li>The basics of voice assistant development and how to connect it to an app.</li> 
+                            <li>Various ways to deploy applications using platforms like Replit and Render.</li>
+                            <li>Strategies for aligning technology with user needs for better health outcomes.</li>
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> What We Can Do Next</h2>
+                            <li><strong>Integration with More Assistants:</strong> Extend compatibility to platforms like Google Assistant and Siri.</li> 
+                            <li><strong>Personalisation:</strong> Use machine learning models to analyse user sleep patterns and provide tailored suggestions.</li>
+                            <li><strong>Health Insights:</strong> Incorporate additional health metrics, such as heart rate and activity levels, from wearable devices to enhance accuracy.</li>
+
+                            <p></p>
+                            <p></p>
+                            <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+
+                            <h2 class="boxed-heading" style="color: #7A89CA;"> working directory</h2>
+                            <p>You can download our working directory by clicking on the blue highlighted box below:</p>
+
+                            <a href="links\CyclingThroughSleep.zip" download="CyclingThroughSleep.zip" 
+                            style="display: inline-block; padding: 12px 20px; background-color: #7A89CA; color: white; font-weight: bold; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s;">
+                            CyclingThroughSleep.zip
+                            </a>
+                                        <hr style="border: 1px solid #7A89CA; border-radius: 5px; margin: 40px 100;">
+                                        <h2 class="boxed-heading" style="color: #7A89CA;"> Our Presentation Video</h2>
+                                        <p>This is the video presented to the judges of VicHack 2024:</p> 
+                                        <video class="video workflow" controls style="width: 100%; height: auto;">
+                                            <source src="images/SLEEPY.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>                                        
+
+
+
+                            <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+                            <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+                            <script src="https://files.bpcontent.cloud/2024/12/20/22/20241220223727-TFN7JN0A.js"></script>
+                                                                        
+				<!-- Footer -->
+            </section>
+            <section>
+                <div style="text-align: center; color: #333333;">
+                    <h2>Contact Me!</h2>
+                    <p>Email: <a href="mailto:srividyabobba28@gmail.com" style="text-decoration: none;">srividyabobba28@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+61415087053" style="text-decoration: none;">0415 087 053</a></p>
+                    <p>Location: Melbourne, VIC</p>
+        
+                    <div style="text-align: center; margin-top: 10px;">
+                        <ul class="icons" style="list-style: none; padding: 0; display: inline-flex; gap: 15px;">
+                            <li><a href="https://www.linkedin.com/in/srividya-bobba-5676182b8/?originalSubdomain=au" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/sbob28/Portfolio.git" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <ul class="copyright">
+                &copy; Untitled. All rights reserved</li>
+            </ul>
+        </div>
+        </footer>
+        
+        </div>
+        
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        </body>
+        </html>
